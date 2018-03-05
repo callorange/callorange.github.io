@@ -10,7 +10,11 @@
 
 .post-toc ol {
   margin: 0;
-  padding: 0 2px 5px 10px;
+  /**
+   * toc item bottom padding
+   * padding: 0 2px 5px 10px;
+   */
+  padding: 0 2px 0px 10px;
   text-align: left;
   list-style: none;
   font-size: 14px;
@@ -37,7 +41,7 @@
   line-height: 1.8;
 }
 
-.post-toc .nav .nav-child { display: none; }
+.post-toc .nav .nav-child { display: block; /* display: none; */ }
 
 .post-toc .nav .active > .nav-child { display: block; }
 
