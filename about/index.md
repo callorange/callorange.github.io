@@ -1,6 +1,6 @@
 ---
-title: about
+title: 
 layout: page
 ---
 
-Building...
+![](/assets/img/avatar.jpg)  
