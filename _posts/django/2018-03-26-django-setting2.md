@@ -39,12 +39,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY', None)
 3. 세팅은 local.py에 한다고 가정.
     - 각 파일마다 세팅법은 동일하니까.
 
->project dir: django-practice
->base dir: django-practice/myproject
->secret dir: django-practice/.secret
->git dir: django-practice/.git
+>project dir: django-practice  
+>base dir: django-practice/myproject  
+>secret dir: django-practice/.secret  
+>git dir: django-practice/.git  
 
-```shell(django-practice)  callorange > ~/projects/practice/django-practice >  master>
+```shell
+(django-practice)  callorange > ~/projects/practice/django-practice >  master>
 > tree . -a
 .
 ├── .git
