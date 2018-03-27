@@ -8,7 +8,7 @@ categories:
 tags:
 - Django setting 관리하기
 ---
-# `Django settings` 비밀키 설정 외부 파일에서 로드하기
+# Django settings 비밀키 설정 외부 파일에서 로드하기
 `SECRET_KEY`나 API연동을 위한 ACCESS KEY는 github같이 개방된 저장소에 올리면 망할 수 있으니 별도 폴더로 빼놓고 동적으로 로딩시키는 법을 정리해 보자
 
 1. 환경변수
@@ -30,10 +30,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', None)
 
 ---
 
-# 외부파일 로드
+# 외부파일 로드 하기
 별도 경로에 파일을 놓고 해당 파일들을 로딩하는 방법이다.  
 `.gitignore`에 해당 폴더를 추가하고 같은 폴더에 넣어 놓으면 이후 배포시에 해당 폴더만 주의해서 배포해 주면 된다.
 
+## 폴더 구조
 1. 베이스 디렉토리와 같은 위치에 `.scecret` 디렉토리 생성
 2. `.scecret` 디렉토리는 `.gitignore`로 해당 디렉토리는 버전관리에서 제외
 3. 세팅은 local.py에 한다고 가정.
@@ -67,8 +68,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY', None)
     ├── db.sqlite3
     └── manage.py
 ```
-
----
 
 ## 외부 파일을 불러오기 위한 공통설정
 `base.py`에 외부 파일을 불러오기 위한 공통 설정을 해보자.  

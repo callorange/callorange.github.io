@@ -8,7 +8,7 @@ categories:
 tags:
 - Django setting 관리하기
 ---
-# `Django settings` 실행환경별 관리
+# Django settings 실행환경별 관리
 실행환경 별로 settings 파일을 나눠보자.
 
 이전글인 [Django가 로딩 및 Response 하는 순서 - 1.3 settings.py 로딩](/django/2018/03/13/install4/){:target='_blank'}에 설명 해놨던 내용을 참조하자.  
@@ -21,7 +21,7 @@ __각 실행환경에서 환경변수에 로딩할 파일명만 제대로 지정
 
 ---
 
-# `settings.py` 패키지화
+# settings.py 패키지화
 굳이 패키지로 만들지 않아도 되지만 패키지로 만들고 그안에 파이썬 파일을 몰아 놓는게. 훨씬 보기 좋으므로 진행하자.
 
 1. setting관련 패키지를 만들자  
