@@ -16,7 +16,6 @@ tags:
 2. 외부파일 로드
     1. ini파일 - configparser
     2. json파일 - json
-    3. python파일
 
 ---
 
